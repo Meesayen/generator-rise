@@ -59,7 +59,6 @@ npm i -g generator-rise
 * Badges with [![][shields]](http://shields.io/)
 * Option to center title and badges in README.
 * Simple [workflow](#beginner-workflow).
-<!-- * [Example][example] -->
 
 # Usage
 > You need [Yeoman](http://yeoman.io/) to run this command.
@@ -107,4 +106,3 @@ MIT © [Jorge Bucaran][author] (Enhanced by [Federico Giovagnoli][Meesayen])
 [ava]:    https://github.com/sindresorhus/ava
 [nyc]:    https://github.com/bcoe/nyc
 [shields]: https://img.shields.io/badge/shields-io-FF3399.svg?style=flat-square
-<!-- [example]: https://github.com/bucaran/example-rise -->
