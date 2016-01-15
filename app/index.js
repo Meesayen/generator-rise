@@ -71,7 +71,7 @@ module.exports = Yeoman.generators.Base.extend({
         this.template("LICENSE")
         this.template("CHANGELOG.md")
         this.template("index.js",      "src/index.js")
-        this.template("test.js",       "test/index.js")
+        this.template("test.js",       "test/index.test.js")
         this.template("editorconfig",  ".editorconfig")
         this.template("gitignore",     ".gitignore")
         this.template("eslintrc",      ".eslintrc")
@@ -82,7 +82,18 @@ module.exports = Yeoman.generators.Base.extend({
   writing: function () {
     [
       { name: 'travis', options: { config: { after_script: ['npm run coveralls'] }}},
-      { name: 'babel',  options: { 'skip-install': this.options['skip-install'] }},
+      { name: 'babel',  options: {
+        'skip-install': this.options['skip-install'],
+        config: {
+          presets: ['es2015'],
+          plugins: [
+            'transform-async-to-generator',
+            'transform-runtime',
+            'transform-regenerator'
+          ],
+          sourceMaps: 'inline'
+        }
+      }},
       { name: 'git-init' },
     ].forEach(function(generator) {
       this.composeWith(generator.name, { options: generator.options || {} }, {

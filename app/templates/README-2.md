@@ -6,13 +6,13 @@
          alt="NPM Version">
   </a>
 
-  <a href="https://coveralls.io/r/<%= githubUsername %>/<%= moduleName %>">
+  <a href="https://coveralls.io/github/<%= githubUsername %>/<%= moduleName %>?branch=master">
     <img src="https://img.shields.io/coveralls/<%= githubUsername %>/<%= moduleName %>.svg?style=flat-square"
          alt="Coverage Status">
   </a>
 
   <a href="https://travis-ci.org/<%= githubUsername %>/<%= moduleName %>">
-    <img src="https://img.shields.io/travis/<%= githubUsername %>/<%= moduleName %>.svg?style=flat-square"
+    <img src="https://img.shields.io/travis/<%= githubUsername %>/<%= moduleName %>/master.svg?style=flat-square"
          alt="Build Status">
   </a>
 
@@ -59,9 +59,9 @@ MIT © [<%= name %>](<%= website %>)
 [npm-image]: https://img.shields.io/npm/v/<%= moduleName %>.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/<%= githubUsername %>/<%= moduleName %>
-[travis-image]: https://img.shields.io/travis/<%= githubUsername %>/<%= moduleName %>.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/<%= githubUsername %>/<%= moduleName %>/master.svg?style=flat-square
 
-[coveralls-url]: https://coveralls.io/r/<%= githubUsername %>/<%= moduleName %>
+[coveralls-url]: https://coveralls.io/github/<%= githubUsername %>/<%= moduleName %>?branch=master
 [coveralls-image]: https://img.shields.io/coveralls/<%= githubUsername %>/<%= moduleName %>.svg?style=flat-square
 
 [depstat-url]: https://david-dm.org/<%= githubUsername %>/<%= moduleName %>

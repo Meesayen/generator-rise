@@ -1,7 +1,7 @@
-import test from "tape"
+import test from "ava"
 import <%= camelModuleName %> from "../src"
 
 test("<%= camelModuleName %>", (t) => {
   t.plan(1)
-  t.equal(true, <%= camelModuleName %>(), "return true")
+  t.same(<%= camelModuleName %>(), true, "return true")
 })

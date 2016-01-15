@@ -1,5 +1,5 @@
 Description:
-  Scaffold out a node module with ES6+, Babel, tape and npm scripts.
+  Scaffold out a node module with ES6+, Babel, Ava and npm scripts.
 
 Example:
   yo rise
@@ -11,7 +11,9 @@ Example:
     LICENSE
     README.md
     CHANGELOG.md
+    .babelrc
     .eslintrc
+    .eslintignore
     .gitignore
     .travis.yml
     .editorconfig

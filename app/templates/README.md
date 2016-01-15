@@ -30,9 +30,9 @@ MIT © [<%= name %>](<%= website %>)
 [npm-image]: https://img.shields.io/npm/v/<%= moduleName %>.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/<%= githubUsername %>/<%= moduleName %>
-[travis-image]: https://img.shields.io/travis/<%= githubUsername %>/<%= moduleName %>.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/<%= githubUsername %>/<%= moduleName %>/master.svg?style=flat-square
 
-[coveralls-url]: https://coveralls.io/r/<%= githubUsername %>/<%= moduleName %>
+[coveralls-url]: https://coveralls.io/github/<%= githubUsername %>/<%= moduleName %>?branch=master
 [coveralls-image]: https://img.shields.io/coveralls/<%= githubUsername %>/<%= moduleName %>.svg?style=flat-square
 
 [depstat-url]: https://david-dm.org/<%= githubUsername %>/<%= moduleName %>
