@@ -21,7 +21,7 @@ helpers.run(join(__dirname, "../app"))
       ".git",
       ".babelrc"
     ])
-    test("☭ generator-rise:app", (t) => {
+    test("升 generator-rise:app", (t) => {
       t.ok(true, "generate template files")
       t.end()
     })

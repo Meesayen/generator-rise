@@ -6,7 +6,7 @@
 <br>
 
 <p align="center"><big>
-Scaffold out a node module with <a href="https://github.com/lukehoban/es6features">ES6</a>+, <a href="https://babeljs.io">Babel</a>, <a href="https://github.com/substack/tape">tape</a> and <a href="https://docs.npmjs.com/misc/scripts">npm scripts</a>
+Scaffold out a node module with <a href="https://github.com/lukehoban/es6features">ES6</a>+, <a href="https://babeljs.io">Babel</a>, <a href="https://github.com/sindresorhus/ava">Ava</a> and <a href="https://docs.npmjs.com/misc/scripts">npm scripts</a>
 </big></p>
 
 <p align="center">
@@ -47,19 +47,19 @@ Scaffold out a node module with <a href="https://github.com/lukehoban/es6feature
 npm i -g generator-rise
 ```
 
-# ☭ Features
+# 升 Features
 
-* [Babel](https://babeljs.io) :point_up:
+* [Babel](https://babeljs.io)
 * [Lint](http://stackoverflow.com/questions/8503559/what-is-linting) with [ESLint](http://eslint.org/)
-* [Tests](http://programmers.stackexchange.com/questions/135218/what-is-the-difference-between-writing-test-cases-for-bdd-and-tdd) with [tape][tape] in ES6
-* [Travis CI](http://docs.travis-ci.com/user/languages/javascript-with-nodejs/) and [Coveralls](https://coveralls.io)
+* [Tests](http://programmers.stackexchange.com/questions/135218/what-is-the-difference-between-writing-test-cases-for-bdd-and-tdd) with [Ava][ava] in ES6
+* [Travis CI](http://docs.travis-ci.com/user/languages/javascript-with-nodejs/) and [Coveralls](https://coveralls.io) with [nyc][nyc] code coverage
 * Productivity   [scripts](https://github.com/bucaran/generator-rise/blob/master/app/templates/package.json#L11) and source [watcher](https://github.com/mikeal/watch)
 * [Check](https://github.com/maxogden/dependency-check) `package` dependencies
 * Automatic TOC with [tocdoc](https://github.com/thlorenz/doctoc)
 * Badges with [![][shields]](http://shields.io/)
 * Option to center title and badges in README.
 * Simple [workflow](#beginner-workflow).
-* [Example][example]
+<!-- * [Example][example] -->
 
 # Usage
 > You need [Yeoman](http://yeoman.io/) to run this command.
@@ -71,16 +71,18 @@ yo rise
 → create LICENSE
 → create CHANGELOG.md
 → create src/index.js
-→ create test/index.js
+→ create test/index.test.js
+→ create .babelrc
 → create .editorconfig
 → create .gitignore
 → create .travis.yml
 → create .eslintrc
+→ create .eslintignore
 ```
 
-# :beginner: Workflow
+# Workflow
 
-* Add code to `src/index.js` and tests to `test/index.js`.
+* Add code to `src/index.js` and tests to `test/index.test.js`.
 
 * Lint, build and test a project with `npm run build`.
 
@@ -98,9 +100,11 @@ yo rise
 
 # License
 
-MIT © [Jorge Bucaran][author]
+MIT © [Jorge Bucaran][author] (Enhanced by [Federico Giovagnoli][Meesayen])
 
 [author]:  https://github.com/bucaran
-[tape]:    https://github.com/substack/tape
+[Meesayen]:  https://github.com/Meesayen
+[ava]:    https://github.com/sindresorhus/ava
+[nyc]:    https://github.com/bcoe/nyc
 [shields]: https://img.shields.io/badge/shields-io-FF3399.svg?style=flat-square
-[example]: https://github.com/bucaran/example-rise
+<!-- [example]: https://github.com/bucaran/example-rise -->
